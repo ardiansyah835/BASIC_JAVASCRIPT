@@ -1,0 +1,114 @@
+<script>
+    // lesson 37
+    /*
+    var courses = newArray('menjahit', 'berenang', 'memasak')
+    courses[1] = 'menyanyi'
+    document.write(courses[1])
+    */ 
+
+    // lesson 38
+    /*var courses = new Array(3)
+    courses[0] = 'menjahit'  
+    courses[1] = 'berenang'
+    courses[2] = 'memasak'
+    courses[3] = 'menjemur'
+    */
+   
+   // lesson 39
+   /*var courses = ['menjahit','berenang','memanah']
+   var menu = ['mie ayam','bakso','nasi goreng']
+   
+   var concatArray = courses.concat(menu)
+   document.write(concatArray)
+   */
+
+   // lesson 41    
+   /*var person = {
+        name : 'john',
+        age : 32
+    }
+   var person2 = []
+   var a = person['name'] = john 
+   var b = person['age'] = 32
+   var c = new person('john',32)
+   document.write(a)
+   document.write(b)
+   document.write(person['name'])
+   document.write(person['age'])
+   */ 
+
+   // lesson 41
+   /*document.write(Math.PI)
+   document.write(Math.sqrt(81))
+   var random = math.floor(math.random()*10)
+   document.write(random+"<br/>")
+   */
+
+   /*var year = 2005
+   document.write(calcCent(year));
+   function calcCent(year){
+    return Math.call(year/100)
+   }
+   */
+
+   // the math object
+   /*var n = prompt("Enter a number", "");
+   var answer = Math.sqrt(n);
+   alert("The square root of " + n + " is " + answer);  
+   */
+
+   // menghitung volume tabung    
+   /*function volumetabung() { 
+    var v=3.14; 
+    var r=parseFloat(document.ffrom.jari.value); 
+    var t=parseFloat(document.ffrom.tinggi.value); 
+    var jumlah=r*r; var jumlah1=jumlah*t; 
+    var jumlah2=jumlah1*v; 
+    alert("Volumenya adalah "+jumlah2); 
+    }
+    */
+
+    // lesson 42
+    /*function myAlert() {
+    alert("Hi");
+    }
+    setInterval(myAlert, 3000);
+    */
+
+    // lesson 43 (jam)
+    /*function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML = hours+":"+mins+":"+secs;
+    }
+    setInterval(printTime, 1000);
+    */
+    
+    // menghitung hari dan 
+    function birthOfCanal(year, month, day)
+    {
+     var namaHari = ['minggu','senin','selasa','rabu','kamis','jumat','sabtu']
+     var d = new Date (year,month,day)
+     var day = d.getDay();
+     return namaHari[day];
+    }
+
+    var y = prompt('masukan tahun lahir mu')
+    var x = prompt('masukan tanggal lahir mu')
+    var z = prompt('masukan bulan lahir mu')
+    var dDay = birthOfCanal(y(m-1));
+
+
+    </script>
+    <!-- kodingan html menghitung volume tabung -->
+    <!-- <form name="ffrom">
+         <input type="text"name="tinggi"placeholder="Masukan Tinggi"> 
+         <input type="text"name="jari"placeholder="Masukan R"> 
+         <input type="button"value="Oke"onclick="volumetabung()"> 
+         <input type="reset"value="reset">
+    </form> -->
+    
+    
+

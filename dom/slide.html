@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <style>
+    button {
+    margin-top:75px;
+    float:left;
+    height:40px;
+    cursor: pointer;
+    border-radius: 30px;
+    }
+    img {
+    float:left;
+    margin-right:10px;
+    margin-left:10px;
+    border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <button onclick="next()">next</button>
+    <img src="img/images1.jpg" width="400px" height="200px" alt="images" id="slider">
+    <button onclick="prev()">prev</button>
+    <script>
+        var images = ['img/images1', 'img/images2.jpg', 'img/images3.jpg', 'img/images4.jpg', 'img/images5.jpg', 'img/images6.jpg', 'img/images7.jpg', 'img/images8.jpg', 'img/images9.jpg', 'img/images10.jpg'];
+        var num = 0;
+        function next(){
+            var slider = document.getElementById('slider');
+            num+=1;
+            if (num>=images.length){
+                num = 0;
+            }
+            slider.src = images[num];
+            }
+
+            function prev(){
+            var slider = document.getElementById('slider');
+            num-=1;
+            if (num<0)
+            {
+                num = images.length-1;
+            }
+            slider.src = images[num]
+            }
+    </script>
+</body>
+</html>

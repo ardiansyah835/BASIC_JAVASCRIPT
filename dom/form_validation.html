@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+body {
+  background: #3498db;
+  font-family: sans-serif;
+}
+ 
+h2 {
+  color: #fff;
+}
+ 
+.login {
+  padding: 1em;
+  margin: 2em auto;
+  width: 17em;
+  background: #fff;
+  border-radius: 3px;
+}
+ 
+label {
+  font-size: 10pt;
+  color: #555;
+}
+ 
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  width: 95%;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
+ 
+.tombol {
+  background: #3498db;
+  color: #fff;
+  border: 0;
+  padding: 5px 8px;
+}
+    </style>
+</head>
+<body>
+    <center><h2>Register</h2></center>
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<label>Tempat Lahir</label>
+				<input type="text" name="nama" id="tempat" />
+			</div>
+			<div>
+				<label>Tanggal Lahir</label>
+				<input type="text" name="nama" id="tanggal" />
+			</div>
+			<div>
+				<label>Alamat:</label>
+				<textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+			</div>
+			<div>
+				<label>Jenis Kelammin</label>
+				<input type="text" name="JK" id="kelamin" />
+			</div>
+			<div>
+				<button class="tombol" onclick="validasi()">Daftar</button>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var alamat = document.getElementById("tempat").value;
+		var alamat = document.getElementById("tanggal").value;
+		var alamat = document.getElementById("alamat").value;
+		var alamat = document.getElementById("kelamin").value;
+		if (nama != "" && email!="" && alamat !="") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+</body>
+</html>

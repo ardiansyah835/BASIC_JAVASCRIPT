@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating And Removing Element</title>
+</head>
+<body>
+    <!-- Metode biskuit -->
+    <!-- Creating element -->
+    <div id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolorum!</div>
+    <!-- Remove Element -->
+    <div id="demo1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <!-- Replacing Element -->
+    <div id="demo2">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+    // Creating Element
+    //calling the function in window.onload to make sure the HTML is loaded
+    window.onload = function() {
+    //creating a new paragraph
+    var p = document.createElement("p");
+    var node = document.createTextNode("My Name Is Ardiansyah");
+    //adding the text to the paragraph
+    p.appendChild(node);
+
+    var div = document.getElementById("demo");
+    //adding the paragraph to the div
+    div.appendChild(p);
+    };
+
+    // Removing element
+    //calling the function in window.onload to make sure the HTML is loaded
+    window.onload = function() {
+    var parent = document.getElementById("demo1");
+    var child = document.getElementById("p1");
+    parent.removeChild(child);
+    };
+
+    // Replacing element
+    //calling the function in window.onload to make sure the HTML is loaded
+    window.onload = function() {
+    var p = document.createElement("p");
+    var node = document.createTextNode("This is new");
+    p.appendChild(node);
+
+    var parent = document.getElementById("demo2");
+    var child = document.getElementById("p1");
+    parent.replaceChild(p, child);
+};
+    </script>
+</body>
+</html>

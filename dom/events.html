@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    button {
+    margin-top:30px;
+    float:left;
+    height:50px;
+    }
+    img {
+    float:left;
+    margin-right:10px;
+    margin-left:10px;
+    }
+    </style>
+</head>
+<body>
+    <button onclick="show();">About Me</button>
+
+    <button id="demo">Real Time</button>
+
+    <input type="text" id="name" onchange="change()">
+
+    <script>
+
+    //calling the function in window.onload to make sure the HTML is loaded
+    window.onload = function() {
+    var x = document.getElementById('demo');
+    x.onclick = function () {
+    document.body.innerHTML = Date();
+    }
+};
+
+    function show() {
+    alert("Hi Saya Ardiansyah");
+}
+
+    function change() {
+    var x = document.getElementById('name');
+    x.value = x.value.toUpperCase();
+}
+    </script>
+    </script>
+</body>
+</html>
